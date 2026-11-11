@@ -8,6 +8,10 @@
 <meta name="description" content="Для проектных организаций: замечания экспертизы и раздел проекта — таблица ответов со ссылками на СП, ГОСТ и ПП № 87 и список правок.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="variant.css">
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
 <script type="application/ld+json">
@@ -62,38 +66,68 @@
 </head>
 <body>
 
-<header><div class="wrap">
-  <div class="logo"><a href="index.html" data-ev="click_logo_home">ОтветЭкспертизе</a></div>
-  <nav class="top"><a href="#chto" data-ev="click_nav_chto">Что вы получаете</a><a href="price.html" data-ev="click_nav_cena">Цена</a><a href="#primer" data-ev="click_nav_primer">Пример</a><a href="#start" data-ev="click_nav_start">Начать</a></nav>
+<header><div class="shell">
+  <a class="home" href="index.html" data-ev="click_logo_home">ОтветЭкспертизе</a>
+  <nav><a href="#chto" data-ev="click_nav_chto">Что вы получаете</a><a href="price.html" data-ev="click_nav_cena">Цена</a><a href="#primer" data-ev="click_nav_primer">Пример</a><a href="#start" data-ev="click_nav_start">Начать</a></nav>
 </div></header>
 
-<div class="wrap">
-  <div class="hero">
-    <h1>Замечания экспертизы — в таблицу ответов со ссылками на нормы и списком правок</h1>
-    <p class="sub">Для проектировщиков и ГИПов: загрузите замечания экспертизы и раздел проектной документации — получите черновик таблицы ответов: пункт замечания, норма, текст ответа и что поправить в разделе.</p>
-    <a class="cta" href="price.html" data-ev="cta_click">Мне это нужно</a>
-    <p class="cta-note">Сервис в подготовке · Оплата на этой странице не принимается</p>
-  </div>
+<main class="shell">
+  <section class="split">
+    <div class="stack">
+      <p class="meta rise"><span class="dot"></span> Для проектировщиков и ГИПов</p>
+      <h1 class="rise" style="--i:1" data-len="long">Замечания экспертизы&nbsp;<span class="soft">— в таблицу ответов со ссылками на нормы и списком правок</span></h1>
+      <p class="rise" style="--i:2">Для проектировщиков и ГИПов: загрузите замечания экспертизы и раздел проектной документации — получите черновик таблицы ответов: пункт замечания, норма, текст ответа и что поправить в разделе.</p>
+      <a class="button rise" style="--i:3" href="price.html" data-ev="cta_click">Мне это нужно</a>
+      <p class="meta rise" style="--i:4">Сервис в подготовке · Оплата на этой странице не принимается</p>
+    </div>
+    <figure class="window rise" style="--i:2"><svg aria-hidden="true" focusable="false" class="shot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><rect x="80" y="80" width="1040" height="640" fill="#ffffff" rx="24" stroke="#dde2ea" stroke-width="3" /><text x="120" y="165" font-size="40" font-weight="600" fill="#0a1524">таблицу ответов</text><line x1="120" y1="210" x2="1080" y2="210" stroke="#dde2ea" stroke-width="3" /><rect x="120" y="260" width="44" height="44" fill="#dfe8f7" rx="8" /><text x="190" y="294" font-size="32" fill="#566174">ссылками на нормы</text><rect x="120" y="390" width="44" height="44" fill="#dfe8f7" rx="8" /><text x="190" y="424" font-size="32" fill="#566174">списком правок</text><rect x="120" y="520" width="44" height="44" fill="#dfe8f7" rx="8" /><text x="190" y="554" font-size="32" fill="#566174">пункт замечания</text><rect x="700" y="250" width="370" height="420" fill="#dfe8f7" rx="20" /><text x="730" y="320" font-size="34" font-weight="600" fill="#0a1524">нормы</text><rect x="740" y="480" width="50" height="120" fill="#12397a" rx="8" stroke="#12397a" stroke-width="3" /><rect x="820" y="420" width="50" height="180" fill="#ffffff" rx="8" stroke="#dde2ea" stroke-width="3" /><rect x="900" y="360" width="50" height="240" fill="#ffffff" rx="8" stroke="#dde2ea" stroke-width="3" /><rect x="980" y="500" width="50" height="100" fill="#ffffff" rx="8" stroke="#dde2ea" stroke-width="3" /></svg></figure>
+    <dl class="facts">
+      <div><dt>Для</dt><dd>Проектировщиков и ГИПов</dd></div>
+      <div><dt>Таблица</dt><dd>Черновик таблицы ответов</dd></div>
+      <div><dt>Как</dt><dd>Загрузите замечания экспертизы</dd></div>
+      <div><dt>Пока</dt><dd>Пока нет</dd></div>
+    </dl>
+  </section>
 
   <section id="chto" data-view="features_view">
-    <h2>Что вы получаете</h2>
-    <div class="grid">
-      <div class="card"><b>Замечания по пунктам</b><span>Замечания экспертизы разобраны по пунктам и разделам.</span><br><a class="btn" href="price.html" data-ev="feature_zamechaniya">Мне это нужно</a></div>
-      <div class="card"><b>Ссылки на нормы</b><span>К каждому пункту — СП, ГОСТ или пункт ПП № 87, на который он опирается.</span><br><a class="btn" href="price.html" data-ev="feature_normy">Мне это нужно</a></div>
-      <div class="card"><b>Текст ответа</b><span>Черновик ответа на каждое замечание для проектировщика.</span><br><a class="btn" href="price.html" data-ev="feature_otvet">Мне это нужно</a></div>
-      <div class="card"><b>Что поправить</b><span>Список правок в разделе с указанием листа или пункта.</span><br><a class="btn" href="price.html" data-ev="feature_pravki">Мне это нужно</a></div>
+    <div class="stack"><h2>Что вы получаете</h2></div>
+    <div class="bento">
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="60" y="50" width="680" height="500" fill="#ffffff" rx="22" stroke="#dde2ea" stroke-width="3" /><text x="100" y="120" font-size="36" font-weight="600" fill="#0a1524">по пунктам</text><text x="100" y="175" font-size="30" fill="#566174">и разделам</text><rect x="120" y="220" width="540" height="300" fill="#ffffff" rx="16" stroke="#dde2ea" stroke-width="3" /><rect x="150" y="250" width="36" height="36" fill="#dfe8f7" rx="8" /><rect x="210" y="258" width="280" height="18" fill="#dde2ea" rx="8" /><rect x="150" y="310" width="36" height="36" fill="#dfe8f7" rx="8" /><rect x="210" y="318" width="220" height="18" fill="#dde2ea" rx="8" /><rect x="150" y="370" width="36" height="36" fill="#dfe8f7" rx="8" /><rect x="210" y="378" width="320" height="18" fill="#b9c3d2" rx="8" /><rect x="150" y="430" width="36" height="36" fill="#dfe8f7" rx="8" /><rect x="210" y="438" width="180" height="18" fill="#dde2ea" rx="8" /><polyline points="156,268 166,280 182,258" fill="none" stroke="#12397a" stroke-width="4" /></svg></div>
+        <h3>Замечания по пунктам</h3><p>Замечания экспертизы разобраны по пунктам и разделам.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_zamechaniya">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="60" y="50" width="680" height="500" fill="#ffffff" rx="22" stroke="#dde2ea" stroke-width="3" /><text x="100" y="120" font-size="36" font-weight="600" fill="#0a1524">Ссылки на нормы</text><text x="100" y="175" font-size="30" fill="#566174">ГОСТ</text><rect x="110" y="230" width="280" height="290" fill="#ffffff" rx="16" stroke="#dde2ea" stroke-width="3" /><rect x="140" y="270" width="200" height="18" fill="#dde2ea" rx="8" /><rect x="140" y="310" width="160" height="18" fill="#b9c3d2" rx="8" /><rect x="140" y="350" width="210" height="18" fill="#dde2ea" rx="8" /><rect x="140" y="390" width="120" height="18" fill="#dde2ea" rx="8" /><circle cx="560" cy="370" r="80" fill="#dfe8f7" /><polyline points="520,375 550,410 610,320" fill="none" stroke="#12397a" stroke-width="8" /></svg></div>
+        <h3>Ссылки на нормы</h3><p>К каждому пункту — СП, ГОСТ или пункт ПП № 87, на который он опирается.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_normy">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="60" y="50" width="680" height="500" fill="#ffffff" rx="22" stroke="#dde2ea" stroke-width="3" /><text x="100" y="120" font-size="36" font-weight="600" fill="#0a1524">Текст ответа</text><text x="100" y="175" font-size="30" fill="#566174">Черновик ответа</text><rect x="180" y="220" width="420" height="300" fill="#ffffff" rx="16" stroke="#dde2ea" stroke-width="3" /><rect x="220" y="250" width="300" height="28" fill="#12397a" rx="8" /><rect x="220" y="310" width="320" height="16" fill="#dde2ea" rx="8" /><rect x="220" y="350" width="260" height="16" fill="#b9c3d2" rx="8" /><rect x="220" y="390" width="300" height="16" fill="#dde2ea" rx="8" /><rect x="220" y="430" width="180" height="16" fill="#dde2ea" rx="8" /></svg></div>
+        <h3>Текст ответа</h3><p>Черновик ответа на каждое замечание для проектировщика.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_otvet">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="60" y="50" width="680" height="500" fill="#ffffff" rx="22" stroke="#dde2ea" stroke-width="3" /><text x="100" y="120" font-size="36" font-weight="600" fill="#0a1524">Что поправить</text><text x="100" y="175" font-size="30" fill="#566174">листа или пункта</text><line x1="120" y1="360" x2="680" y2="360" stroke="#dde2ea" stroke-width="6" /><rect x="120" y="310" width="120" height="100" fill="#ffffff" rx="28" stroke="#dde2ea" stroke-width="3" /><rect x="265" y="310" width="120" height="100" fill="#dfe8f7" rx="28" stroke="#dde2ea" stroke-width="3" /><rect x="410" y="310" width="120" height="100" fill="#12397a" rx="28" stroke="#12397a" stroke-width="3" /><rect x="555" y="310" width="120" height="100" fill="#ffffff" rx="28" stroke="#dde2ea" stroke-width="3" /></svg></div>
+        <h3>Что поправить</h3><p>Список правок в разделе с указанием листа или пункта.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_pravki">Мне это нужно</a>
+      </article>
     </div>
   </section>
 
-  <section id="primer" data-view="example_view">
-    <h2>Пример (вымышленные данные)</h2>
-    <p class="fine">Проект жилого дома, экспертиза выдала 38 замечаний по разделам ИОС и ПБ. Загружены замечания и тома разделов. Через несколько минут — таблица: 38 пунктов, у каждого норма и черновик ответа; по 11 пунктам — правки в томе с номерами листов, по 4 — «требует решения ГИПа».</p>
-    <a class="cta" href="price.html" data-ev="click_cta_after_example">Выбрать тариф</a>
+  <section id="primer" data-view="example_view" class="split flip">
+    <div class="stack">
+      <h2>Пример</h2>
+      <p>Проект жилого дома, экспертиза выдала 38 замечаний по разделам ИОС и ПБ. Загружены замечания и тома разделов. Через несколько минут — таблица: 38 пунктов, у каждого норма и черновик ответа; по 11 пунктам — правки в томе с номерами листов, по 4 — «требует решения ГИПа».</p>
+    <a class="button" href="price.html" data-ev="click_cta_after_example">Выбрать тариф</a>
+    </div>
+<svg aria-hidden="true" focusable="false" class="shot reveal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><line x1="200" y1="150" x2="1000" y2="150" stroke="#dde2ea" stroke-width="6" /><circle cx="240" cy="150" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><text x="240" y="230" font-size="32" font-weight="600" text-anchor="middle" fill="#0a1524">дома</text><circle cx="600" cy="150" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><text x="600" y="230" font-size="32" font-weight="600" text-anchor="middle" fill="#0a1524">норма</text><circle cx="960" cy="150" r="22" fill="#12397a" stroke="#12397a" stroke-width="6" /><text x="960" y="230" font-size="32" font-weight="600" text-anchor="middle" fill="#0a1524">ответ</text><rect x="120" y="300" width="960" height="420" fill="#ffffff" rx="24" stroke="#dde2ea" stroke-width="3" /><rect x="170" y="364" width="44" height="44" fill="#dfe8f7" rx="8" /><text x="240" y="400" font-size="34" fill="#566174">жилого дома</text><rect x="170" y="454" width="44" height="44" fill="#dfe8f7" rx="8" /><text x="240" y="490" font-size="34" fill="#566174">черновик ответа</text><rect x="170" y="544" width="44" height="44" fill="#dfe8f7" rx="8" /><text x="240" y="580" font-size="34" fill="#566174">решения ГИПа</text></svg>
   </section>
 <!-- seo-tekst:start -->
-  <section id="opis">
-    <h2>Как это работает</h2>
-    <p>После подачи проекта в экспертизу проектная организация получает замечания, и на ответ отводится ограниченное время. Каждое замечание нужно разобрать, найти норму, на которую ссылается эксперт, написать ответ и поправить раздел. Часто эту работу отдают на сторону за отдельную плату. ОтветЭкспертизе готовит черновик ответов, а решение по каждому пункту остаётся за проектировщиком.</p>
+  <section id="opis" class="split flip">
+    <div class="stack"><h2>Как это работает</h2></div>
+    <div class="stack">
+      <p>После подачи проекта в экспертизу проектная организация получает замечания, и на ответ отводится ограниченное время. Каждое замечание нужно разобрать, найти норму, на которую ссылается эксперт, написать ответ и поправить раздел. Часто эту работу отдают на сторону за отдельную плату. ОтветЭкспертизе готовит черновик ответов, а решение по каждому пункту остаётся за проектировщиком.</p>
     <p>Вы загружаете документ с замечаниями экспертизы — государственной или негосударственной — и тома разделов, к которым они относятся. Сервис разбирает замечания по пунктам и сопоставляет каждый пункт с разделом и местом в томе, о котором идёт речь.</p>
     <p>К каждому пункту подбирается норма: свод правил, ГОСТ или пункт Положения о составе разделов проектной документации (ПП № 87), на который опирается замечание или на который можно сослаться в ответе. Ссылка даётся с номером пункта, чтобы её можно было проверить.</p>
     <p>Для каждого замечания готовится черновик ответа: согласиться и поправить раздел или обосновать принятое решение со ссылкой на норму. Если замечание требует решения главного инженера проекта, пункт так и отмечается.</p>
@@ -106,31 +140,34 @@
     <p>Загруженные документы хранятся в защищённом кабинете организации и используются только для подготовки ответов. После завершения экспертизы проект можно удалить из кабинета или оставить в архиве для следующих объектов.</p>
     <p>Для организаций, которые часто проходят экспертизу, архив прошлых ответов становится справочником: похожие замечания по другим объектам видны рядом, и проверенный ответ можно взять за основу.</p>
     <p>ОтветЭкспертизе не является экспертной организацией и не отвечает за проектные решения. Ответы готовятся как черновик; за их содержание и за проект отвечает проектная организация.</p>
+    </div>
   </section>
   <section id="faq">
-    <h2>Вопросы и ответы</h2>
-    <h3>Для кого сервис?</h3>
-    <p>Для проектных организаций, ГИПов и проектировщиков разделов.</p>
-    <h3>Какие экспертизы поддерживаются?</h3>
-    <p>Замечания государственной и негосударственной экспертизы.</p>
-    <h3>Что я получаю?</h3>
-    <p>Таблицу: пункт замечания, норма, черновик ответа и список правок в разделе.</p>
-    <h3>Кто отвечает за ответ?</h3>
-    <p>Проектная организация. Сервис готовит черновик.</p>
-    <h3>Можно уже пользоваться?</h3>
-    <p>Пока нет. Сервис готовится, и мы проверяем, нужен ли он проектировщикам.</p>
+    <div class="stack"><h2>Вопросы и ответы</h2></div>
+    <div class="rows">
+      <div class="split flip"><h3>Для кого сервис?</h3><p>Для проектных организаций, ГИПов и проектировщиков разделов.</p></div>
+      <div class="split flip"><h3>Какие экспертизы поддерживаются?</h3><p>Замечания государственной и негосударственной экспертизы.</p></div>
+      <div class="split flip"><h3>Что я получаю?</h3><p>Таблицу: пункт замечания, норма, черновик ответа и список правок в разделе.</p></div>
+      <div class="split flip"><h3>Кто отвечает за ответ?</h3><p>Проектная организация. Сервис готовит черновик.</p></div>
+      <div class="split flip"><h3>Можно уже пользоваться?</h3><p>Пока нет. Сервис готовится, и мы проверяем, нужен ли он проектировщикам.</p></div>
+    </div>
   </section>
 <!-- seo-tekst:end -->
-  <section id="start" data-view="start_view">
-    <h2>Загрузите замечания</h2>
-    <p><label>Вид экспертизы<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— выберите —</option><option>Государственная</option><option>Негосударственная</option><option>Пока не знаю</option></select></label></p>
-    <a class="cta" href="price.html" data-ev="form_submit_click">Загрузить</a>
+  <section id="start" data-view="start_view" class="split">
+    <div class="stack">
+      <h2>Загрузите замечания</h2>
+    </div>
+    <div class="tile stack">
+      <label>Вид экспертизы<select data-ev-focus="form_start"><option value="">— выберите —</option><option>Государственная</option><option>Негосударственная</option><option>Пока не знаю</option></select></label>
+      <a class="button" href="price.html" data-ev="form_submit_click">Загрузить</a>
+    </div>
   </section>
-</div>
+</main>
 
-<footer><div class="wrap">
+<footer><div class="shell">
+  <p><b>ОтветЭкспертизе</b></p>
   <p>Оператор: ИП Гудев Роман, ИНН 615007167949 &middot; <a href="privacy.html" data-ev="click_legal_privacy">Политика обработки персональных данных</a></p>
-  <p class="muted">Не экспертная организация. Ответы — черновик; за проектные решения и ответы отвечает проектная организация.</p>
+  <p>Не экспертная организация. Ответы — черновик; за проектные решения и ответы отвечает проектная организация.</p>
 </div></footer>
 
 </body>
